@@ -1,0 +1,457 @@
+
+==============================================================================
+  DATA  (0.0 min elapsed)
+==============================================================================
+Warning: Looks like you're using an outdated `kagglehub` version (installed: 1.0.2), please consider upgrading to the latest version (1.0.3)  expeditions: /Users/chinmayakumarpalo/.cache/kagglehub/datasets/siddharth0935/himalayan-expeditions/versions/1 
+  weather    : /Users/chinmayakumarpalo/.cache/kagglehub/datasets/bonesclarke26/historic-weather-data-for-himalayan-peaks/versions/6
+   expeditions_total            11425
+   expeditions_retained         9457
+   weather_peaks                27
+   peaks_in_data                27
+   pct_no_interval              15.3537
+   positives                    504
+   positive_rate_pct            5.3294
+   imbalance_ratio              17.764
+   encoded_columns              70
+   columns_after_screen         44
+   train_rows                   6619
+   test_rows                    2838
+   train_positives              353
+   test_positives               151
+   duplicate_rows               112
+
+==============================================================================
+  MASTER FIGURE  (0.2 min elapsed)
+==============================================================================
+   fig01_dataset_overview written
+   coordinates template: /Users/chinmayakumarpalo/Desktop/himalayan/results_v5/artifacts/peak_coordinates_VERIFY.csv
+   map panel active: True (27 peaks with coordinates)
+
+==============================================================================
+  BASELINES  (0.2 min elapsed)
+==============================================================================
+               Accuracy  Precision  Recall      F1
+Model                                             
+Decision Tree    0.9047     0.1229  0.1292  0.1257
+Random Forest    0.9391     0.2356  0.0629  0.0989
+XGBoost          0.9187     0.1675  0.1331  0.1480
+k-NN             0.9432     0.1100  0.0092  0.0170
+
+==============================================================================
+  FEATURE SELECTION  (0.3 min elapsed)
+==============================================================================
+   [1/140] GA        seed=42 F1=0.1793 |s|= 20   41.1s fits=559 | 1m
+   [2/140] PSO       seed=42 F1=0.1418 |s|= 21   47.9s fits=620 | 2m
+   [3/140] GWO       seed=42 F1=0.1607 |s|= 31   50.6s fits=620 | 3m
+   [4/140] EVO       seed=42 F1=0.1006 |s|=  1   10.2s fits=137 | 3m
+   [5/140] FOA       seed=42 F1=0.1667 |s|= 23   44.5s fits=568 | 4m
+   [6/140] FOA_GWO   seed=42 F1=0.2037 |s|= 23   98.4s fits=1220 | 5m
+   [7/140] GWO_FOA   seed=42 F1=0.1634 |s|= 28   98.2s fits=1220 | 7m
+   [8/140] BWOA      seed=42 F1=0.1538 |s|= 23   50.9s fits=620 | 8m
+   [9/140] BHHO      seed=42 F1=0.1622 |s|= 28   51.1s fits=620 | 9m
+   [10/140] BSSA      seed=42 F1=0.2032 |s|= 30   83.9s fits=620 | 10m
+   [11/140] Embedded  seed=42 F1=0.1379 |s|= 36
+   [12/140] MutualInfo seed=42 F1=0.1615 |s|= 23
+   [13/140] RFE       seed=42 F1=0.1549 |s|= 23
+   [14/140] AllFeatures seed=42 F1=0.1382 |s|= 44
+   [15/140] GA        seed=49 F1=0.1971 |s|= 23   41.5s fits=562 | 14m
+   [16/140] PSO       seed=49 F1=0.1945 |s|= 18   45.7s fits=620 | 15m
+   [17/140] GWO       seed=49 F1=0.1770 |s|= 27   49.7s fits=620 | 16m
+   [18/140] EVO       seed=49 F1=0.1662 |s|= 19   13.5s fits=176 | 16m
+   [19/140] FOA       seed=49 F1=0.1884 |s|= 20   37.4s fits=501 | 16m
+   [20/140] FOA_GWO   seed=49 F1=0.2135 |s|= 31  124.8s fits=1220 | 18m
+   [21/140] GWO_FOA   seed=49 F1=0.1783 |s|= 26  110.8s fits=1220 | 20m
+   [22/140] BWOA      seed=49 F1=0.1975 |s|= 28   56.5s fits=620 | 21m
+   [23/140] BHHO      seed=49 F1=0.1808 |s|= 22   54.0s fits=620 | 22m
+   [24/140] BSSA      seed=49 F1=0.1895 |s|= 34   55.9s fits=620 | 23m
+   [25/140] Embedded  seed=49 F1=0.1849 |s|= 40
+   [26/140] MutualInfo seed=49 F1=0.1886 |s|= 27
+   [27/140] RFE       seed=49 F1=0.2373 |s|= 27
+   [28/140] AllFeatures seed=49 F1=0.1775 |s|= 44
+   [29/140] GA        seed=56 F1=0.1662 |s|= 23   42.9s fits=551 | 25m
+   [30/140] PSO       seed=56 F1=0.1662 |s|= 23   46.8s fits=620 | 26m
+   [31/140] GWO       seed=56 F1=0.1429 |s|= 30   49.4s fits=620 | 27m
+   [32/140] EVO       seed=56 F1=0.1662 |s|= 23   10.0s fits=130 | 27m
+   [33/140] FOA       seed=56 F1=0.1361 |s|= 22   41.1s fits=542 | 28m
+   [34/140] FOA_GWO   seed=56 F1=0.1662 |s|= 23   97.4s fits=1220 | 29m
+   [35/140] GWO_FOA   seed=56 F1=0.1662 |s|= 23  101.9s fits=1220 | 31m
+   [36/140] BWOA      seed=56 F1=0.1662 |s|= 23   51.8s fits=620 | 32m
+   [37/140] BHHO      seed=56 F1=0.1662 |s|= 23   51.3s fits=620 | 33m
+   [38/140] BSSA      seed=56 F1=0.1481 |s|= 27   54.5s fits=620 | 34m
+   [39/140] Embedded  seed=56 F1=0.1597 |s|= 37
+   [40/140] MutualInfo seed=56 F1=0.1151 |s|= 23
+   [41/140] RFE       seed=56 F1=0.1338 |s|= 23
+   [42/140] AllFeatures seed=56 F1=0.1328 |s|= 44
+   [43/140] GA        seed=63 F1=0.1581 |s|= 21   42.3s fits=557 | 36m
+   [44/140] PSO       seed=63 F1=0.1805 |s|= 14   45.0s fits=620 | 37m
+   [45/140] GWO       seed=63 F1=0.1818 |s|= 28   51.2s fits=620 | 38m
+   [46/140] EVO       seed=63 F1=0.1518 |s|= 20   14.0s fits=167 | 38m
+   [47/140] FOA       seed=63 F1=0.1552 |s|= 20   41.3s fits=541 | 39m
+   [48/140] FOA_GWO   seed=63 F1=0.1429 |s|= 32  106.4s fits=1220 | 41m
+   [49/140] GWO_FOA   seed=63 F1=0.1628 |s|= 25  132.9s fits=1220 | 43m
+   [50/140] BWOA      seed=63 F1=0.1548 |s|= 20   59.1s fits=620 | 44m
+   [51/140] BHHO      seed=63 F1=0.1574 |s|= 21   50.7s fits=620 | 45m
+   [52/140] BSSA      seed=63 F1=0.1194 |s|= 28   57.3s fits=620 | 46m
+   [53/140] Embedded  seed=63 F1=0.1538 |s|= 38
+   [54/140] MutualInfo seed=63 F1=0.1107 |s|= 27
+   [55/140] RFE       seed=63 F1=0.1575 |s|= 27
+   [56/140] AllFeatures seed=63 F1=0.1364 |s|= 43
+   [57/140] GA        seed=70 F1=0.1913 |s|= 22   41.5s fits=551 | 48m
+   [58/140] PSO       seed=70 F1=0.1848 |s|= 22   45.5s fits=620 | 49m
+   [59/140] GWO       seed=70 F1=0.1433 |s|= 31   50.0s fits=620 | 50m
+   [60/140] EVO       seed=70 F1=0.1004 |s|= 29   10.1s fits=126 | 50m
+   [61/140] FOA       seed=70 F1=0.1840 |s|= 20   43.2s fits=568 | 51m
+   [62/140] FOA_GWO   seed=70 F1=0.1812 |s|= 30  102.0s fits=1220 | 53m
+   [63/140] GWO_FOA   seed=70 F1=0.1150 |s|= 29  101.7s fits=1220 | 54m
+   [64/140] BWOA      seed=70 F1=0.1196 |s|= 16   50.3s fits=620 | 55m
+   [65/140] BHHO      seed=70 F1=0.1796 |s|= 21   48.8s fits=620 | 56m
+   [66/140] BSSA      seed=70 F1=0.1794 |s|= 29   52.5s fits=620 | 57m
+   [67/140] Embedded  seed=70 F1=0.1704 |s|= 37
+   [68/140] MutualInfo seed=70 F1=0.1915 |s|= 30
+   [69/140] RFE       seed=70 F1=0.1455 |s|= 30
+   [70/140] AllFeatures seed=70 F1=0.1397 |s|= 44
+   [71/140] GA        seed=77 F1=0.1615 |s|= 27   44.1s fits=566 | 60m
+   [72/140] PSO       seed=77 F1=0.1043 |s|= 27   47.2s fits=620 | 61m
+   [73/140] GWO       seed=77 F1=0.1049 |s|= 31   49.5s fits=620 | 62m
+   [74/140] EVO       seed=77 F1=0.0990 |s|=  1    8.7s fits=123 | 62m
+   [75/140] FOA       seed=77 F1=0.1330 |s|= 19   38.8s fits=543 | 63m
+   [76/140] FOA_GWO   seed=77 F1=0.1219 |s|= 24   95.0s fits=1220 | 64m
+   [77/140] GWO_FOA   seed=77 F1=0.1254 |s|= 27   96.3s fits=1220 | 66m
+   [78/140] BWOA      seed=77 F1=0.1108 |s|= 22   50.1s fits=620 | 67m
+   [79/140] BHHO      seed=77 F1=0.1337 |s|= 29   48.4s fits=620 | 68m
+   [80/140] BSSA      seed=77 F1=0.1168 |s|= 33   50.5s fits=620 | 68m
+   [81/140] Embedded  seed=77 F1=0.1232 |s|= 40
+   [82/140] MutualInfo seed=77 F1=0.0882 |s|= 27
+   [83/140] RFE       seed=77 F1=0.1567 |s|= 27
+   [84/140] AllFeatures seed=77 F1=0.1254 |s|= 43
+   [85/140] GA        seed=84 F1=0.1560 |s|= 21   41.2s fits=544 | 70m
+   [86/140] PSO       seed=84 F1=0.1523 |s|= 22   45.4s fits=620 | 71m
+   [87/140] GWO       seed=84 F1=0.1609 |s|= 19   48.4s fits=620 | 72m
+   [88/140] EVO       seed=84 F1=0.1065 |s|=  6   14.5s fits=198 | 72m
+   [89/140] FOA       seed=84 F1=0.1538 |s|= 18   39.4s fits=571 | 73m
+   [90/140] FOA_GWO   seed=84 F1=0.1604 |s|= 20   96.5s fits=1220 | 74m
+   [91/140] GWO_FOA   seed=84 F1=0.1317 |s|= 27   98.5s fits=1220 | 76m
+   [92/140] BWOA      seed=84 F1=0.1881 |s|= 30   49.1s fits=620 | 77m
+   [93/140] BHHO      seed=84 F1=0.1889 |s|= 22   47.0s fits=620 | 78m
+   [94/140] BSSA      seed=84 F1=0.1453 |s|= 22   49.8s fits=620 | 79m
+   [95/140] Embedded  seed=84 F1=0.1566 |s|= 40
+   [96/140] MutualInfo seed=84 F1=0.1685 |s|= 24
+   [97/140] RFE       seed=84 F1=0.1496 |s|= 24
+   [98/140] AllFeatures seed=84 F1=0.1729 |s|= 44
+   [99/140] GA        seed=91 F1=0.1625 |s|= 18   43.2s fits=566 | 80m
+   [100/140] PSO       seed=91 F1=0.1703 |s|= 17   44.8s fits=620 | 81m
+   [101/140] GWO       seed=91 F1=0.1672 |s|= 21   47.2s fits=620 | 82m
+   [102/140] EVO       seed=91 F1=0.1136 |s|=  4   17.1s fits=245 | 82m
+   [103/140] FOA       seed=91 F1=0.1654 |s|= 21   38.7s fits=570 | 83m
+   [104/140] FOA_GWO   seed=91 F1=0.1574 |s|= 27   92.3s fits=1220 | 84m
+   [105/140] GWO_FOA   seed=91 F1=0.1739 |s|= 28   95.5s fits=1220 | 86m
+   [106/140] BWOA      seed=91 F1=0.1747 |s|= 25   49.3s fits=620 | 87m
+   [107/140] BHHO      seed=91 F1=0.1534 |s|= 24   47.1s fits=620 | 88m
+   [108/140] BSSA      seed=91 F1=0.1261 |s|= 21   49.1s fits=620 | 88m
+   [109/140] Embedded  seed=91 F1=0.1561 |s|= 33
+   [110/140] MutualInfo seed=91 F1=0.1555 |s|= 25
+   [111/140] RFE       seed=91 F1=0.1487 |s|= 25
+   [112/140] AllFeatures seed=91 F1=0.1149 |s|= 43
+   [113/140] GA        seed=98 F1=0.1907 |s|= 11   39.5s fits=558 | 92m
+   [114/140] PSO       seed=98 F1=0.1421 |s|= 24   45.5s fits=620 | 93m
+   [115/140] GWO       seed=98 F1=0.1447 |s|= 28   48.9s fits=620 | 94m
+   [116/140] EVO       seed=98 F1=0.1322 |s|= 17   14.4s fits=188 | 94m
+   [117/140] FOA       seed=98 F1=0.1793 |s|= 21   38.5s fits=541 | 95m
+   [118/140] FOA_GWO   seed=98 F1=0.1737 |s|= 25   95.5s fits=1220 | 97m
+   [119/140] GWO_FOA   seed=98 F1=0.1250 |s|= 23   95.5s fits=1220 | 98m
+   [120/140] BWOA      seed=98 F1=0.1411 |s|= 24   48.0s fits=620 | 99m
+   [121/140] BHHO      seed=98 F1=0.1149 |s|= 27   47.4s fits=620 | 100m
+   [122/140] BSSA      seed=98 F1=0.1538 |s|= 27   49.1s fits=620 | 101m
+   [123/140] Embedded  seed=98 F1=0.1509 |s|= 42
+   [124/140] MutualInfo seed=98 F1=0.1429 |s|= 25
+   [125/140] RFE       seed=98 F1=0.1407 |s|= 25
+   [126/140] AllFeatures seed=98 F1=0.1181 |s|= 44
+   [127/140] GA        seed=105 F1=0.1922 |s|= 28   39.5s fits=555 | 102m
+   [128/140] PSO       seed=105 F1=0.1956 |s|= 21   45.6s fits=620 | 102m
+   [129/140] GWO       seed=105 F1=0.1725 |s|= 19   48.0s fits=620 | 103m
+   [130/140] EVO       seed=105 F1=0.1212 |s|=  4   10.0s fits=145 | 103m
+   [131/140] FOA       seed=105 F1=0.1456 |s|= 20   39.2s fits=569 | 104m
+   [132/140] FOA_GWO   seed=105 F1=0.1481 |s|= 33   92.2s fits=1220 | 106m
+   [133/140] GWO_FOA   seed=105 F1=0.1730 |s|= 29   93.3s fits=1220 | 107m
+   [134/140] BWOA      seed=105 F1=0.1278 |s|= 23   48.4s fits=620 | 108m
+   [135/140] BHHO      seed=105 F1=0.2138 |s|= 30   49.0s fits=620 | 109m
+   [136/140] BSSA      seed=105 F1=0.1631 |s|= 28   48.6s fits=620 | 110m
+   [137/140] Embedded  seed=105 F1=0.1832 |s|= 42
+   [138/140] MutualInfo seed=105 F1=0.1382 |s|= 26
+   [139/140] RFE       seed=105 F1=0.1556 |s|= 26
+   [140/140] AllFeatures seed=105 F1=0.1716 |s|= 44
+     Method  F1_mean  F1_std  NumFeatures_mean  DegenerateRuns
+         GA   0.1755  0.0162              21.4               0
+    FOA_GWO   0.1669  0.0276              26.8               0
+       BHHO   0.1651  0.0281              24.7               0
+        PSO   0.1632  0.0286              20.9               0
+        FOA   0.1607  0.0194              20.4               0
+        RFE   0.1580  0.0289              25.7               0
+   Embedded   0.1577  0.0189              38.5               0
+        GWO   0.1556  0.0227              26.5               0
+       BSSA   0.1545  0.0296              27.9               0
+       BWOA   0.1534  0.0289              23.4               0
+    GWO_FOA   0.1515  0.0242              26.5               0
+ MutualInfo   0.1461  0.0339              25.7               0
+AllFeatures   0.1428  0.0231              43.7               0
+        EVO   0.1258  0.0269              12.4               0
+friedman: {'statistic': 32.0053, 'p_value': 0.002398, 'methods': ['AllFeatures', 'BHHO', 'BSSA', 'BWOA', 'EVO', 'Embedded', 'FOA', 'FOA_GWO', 'GA', 'GWO', 'GWO_FOA', 'MutualInfo', 'PSO', 'RFE'], 'n_seeds': 10}
+
+==============================================================================
+  IMBALANCE  (110.3 min elapsed)
+==============================================================================
+   seed 42 done
+   seed 49 done
+   seed 56 done
+   seed 63 done
+   seed 70 done
+   seed 77 done
+   seed 84 done
+   seed 91 done
+   seed 98 done
+   seed 105 done
+
+==============================================================================
+  CALIBRATION  (111.2 min elapsed)
+==============================================================================
+  Method Calibrated  Runs  ECE_mean  ECE_std  AdaptiveECE_mean  MCE_mean  Brier_mean  BrierSkill_mean  LogLoss_mean  F1_mean  Precision_mean  Recall_mean  ROC_AUC_mean  AP_mean
+Baseline         no    10   0.08035  0.01499           0.08317   0.70793     0.07584         -0.50551       0.28176  0.16283         0.09820      0.48543       0.67193  0.11828
+Baseline        yes    10   0.00428  0.00239           0.01902   0.11012     0.04923          0.02277       0.19920  0.16149         0.22786      0.15166       0.69221  0.12538
+
+==============================================================================
+  FINAL MODEL  (111.2 min elapsed)
+==============================================================================
+ Seed  Precision  Recall     F1  ROC_AUC  AveragePrecision      ECE
+   42     0.2086  0.1921 0.2000 0.702236          0.145444 0.006800
+   49     0.3000  0.1788 0.2241 0.735809          0.154629 0.008781
+   56     0.1638  0.1258 0.1423 0.667023          0.101183 0.001335
+   63     0.1857  0.1722 0.1787 0.694950          0.123373 0.003207
+   70     0.1683  0.1126 0.1349 0.716287          0.137917 0.003724
+   77     0.1066  0.1391 0.1207 0.659950          0.103847 0.006472
+   84     0.1623  0.1656 0.1639 0.688133          0.120890 0.002201
+   91     0.1932  0.1126 0.1423 0.717761          0.126913 0.003793
+   98     0.1610  0.1258 0.1413 0.645243          0.102219 0.002000
+  105     0.1745  0.1722 0.1733 0.694714          0.137399 0.004506
+
+==============================================================================
+  SENSITIVITY  (111.3 min elapsed)
+==============================================================================
+   sens 6/66
+   sens 12/66
+   sens 18/66
+   sens 24/66
+   sens 30/66
+   sens 36/66
+   sens 42/66
+   sens 48/66
+   sens 54/66
+   sens 60/66
+   sens 66/66
+
+==============================================================================
+  LEAKAGE ABLATION  (138.5 min elapsed)
+==============================================================================
+   termreason excluded    seed=42 AUC=0.7022 AP=0.1454
+   termreason readmitted  seed=42 AUC=0.7975 AP=0.3867
+   termreason excluded    seed=49 AUC=0.7358 AP=0.1546
+   termreason readmitted  seed=49 AUC=0.8528 AP=0.4149
+   termreason excluded    seed=56 AUC=0.6670 AP=0.1012
+   termreason readmitted  seed=56 AUC=0.8180 AP=0.3611
+   termreason excluded    seed=63 AUC=0.6950 AP=0.1234
+   termreason readmitted  seed=63 AUC=0.8018 AP=0.3997
+   termreason excluded    seed=70 AUC=0.7163 AP=0.1379
+   termreason readmitted  seed=70 AUC=0.7995 AP=0.3365
+
+==============================================================================
+  HONEST THRESHOLD  (154.4 min elapsed)
+==============================================================================
+   honest F1 0.1508 vs test-tuned 0.1745 (inflation +0.0237)
+
+==============================================================================
+  BUDGET CUTOFFS  (154.6 min elapsed)
+==============================================================================
+ BudgetFraction  Flagged  TruePositives  FalseAlarms  Recall_mean  Recall_sd  Precision_mean  Precision_sd  Lift_mean
+          0.005     14.0            3.6         10.4       0.0238     0.0071          0.2572        0.0768     4.8328
+          0.010     28.0            6.6         21.4       0.0437     0.0126          0.2357        0.0677     4.4300
+          0.020     57.0           12.2         44.8       0.0808     0.0249          0.2140        0.0660     4.0227
+          0.050    142.0           24.7        117.3       0.1636     0.0279          0.1740        0.0297     3.2691
+          0.100    284.0           39.8        244.2       0.2636     0.0399          0.1401        0.0213     2.6338
+          0.250    710.0           73.8        636.2       0.4887     0.0489          0.1039        0.0104     1.9535
+
+==============================================================================
+  LABEL SHUFFLE  (154.7 min elapsed)
+==============================================================================
+                 ROC_AUC  AveragePrecision
+Condition                                 
+real labels       0.7161            0.1404
+shuffled labels   0.4989            0.0553
+
+==============================================================================
+  CALIBRATION METHODS  (155.0 min elapsed)
+==============================================================================
+                 ECE    Brier  ROC_AUC
+Calibration                           
+isotonic     0.00395  0.04902  0.68921
+none         0.08035  0.07584  0.67193
+sigmoid      0.00428  0.04923  0.69221
+
+==============================================================================
+  LINEAR BASELINE  (155.2 min elapsed)
+==============================================================================
+          Metric  Logistic_mean  Pipeline_mean  Difference  LogisticWins  n  Wilcoxon_p
+         ROC_AUC         0.7485         0.6922      0.0563            10 10     0.00195
+AveragePrecision         0.1762         0.1254      0.0508            10 10     0.00195
+              F1         0.2504         0.1622      0.0882            10 10     0.00195
+
+==============================================================================
+  TEMPORAL SPLIT  (155.2 min elapsed)
+==============================================================================
+   <= 1990 (hybrid subset) AUC=0.5780 AP=0.0574
+   <= 1990 (all features) AUC=0.6037 AP=0.0627
+   <= 2000 (hybrid subset) AUC=0.6529 AP=0.0608
+   <= 2000 (all features) AUC=0.6652 AP=0.0679
+   <= 2010 (hybrid subset) AUC=0.6127 AP=0.0462
+   <= 2010 (all features) AUC=0.6594 AP=0.0570
+
+==============================================================================
+  LEAVE-ONE-PEAK-OUT  (159.5 min elapsed)
+==============================================================================
+   EVER  n= 2347 pos=166 AUC=0.6434
+   AMAD  n= 1576 pos= 23 AUC=0.7007
+   CHOY  n= 1359 pos= 38 AUC=0.711
+   MANA  n=  775 pos= 49 AUC=0.6236
+   LHOT  n=  512 pos= 18 AUC=0.6915
+   DHA1  n=  424 pos= 46 AUC=0.6442
+   MAKA  n=  383 pos= 27 AUC=0.7103
+   PUMO  n=  276 pos= 19 AUC=0.7221
+   ANN1  n=  264 pos= 37 AUC=0.7066
+   KANG  n=  204 pos= 24 AUC=0.7505
+   TILI  n=   90 pos=  6 AUC=0.4901
+   LANG  n=   51 pos=  7 AUC=0.6786
+
+==============================================================================
+  TUNING  (159.6 min elapsed)
+==============================================================================
+   seed 42 best={'max_depth': 3, 'n_estimators': 100, 'learning_rate': 0.05, 'subsample': 0.8} CV_AP=0.1719 test_AP=0.1666
+   seed 49 best={'max_depth': 3, 'n_estimators': 100, 'learning_rate': 0.05, 'subsample': 1.0} CV_AP=0.1481 test_AP=0.1837
+   seed 56 best={'max_depth': 3, 'n_estimators': 100, 'learning_rate': 0.05, 'subsample': 0.8} CV_AP=0.1604 test_AP=0.1721
+
+==============================================================================
+  REPEATED K-FOLD  (160.5 min elapsed)
+==============================================================================
+   k-fold AUC 0.7261 +/- 0.0212
+
+==============================================================================
+  ARCHIVAL COLUMNS  (160.6 min elapsed)
+==============================================================================
+   with archival columns      seed=42 AUC=0.7022
+   without archival columns   seed=42 AUC=0.6997
+   with archival columns      seed=49 AUC=0.7358
+   without archival columns   seed=49 AUC=0.7357
+   with archival columns      seed=56 AUC=0.6670
+   without archival columns   seed=56 AUC=0.7136
+   with archival columns      seed=63 AUC=0.6950
+   without archival columns   seed=63 AUC=0.7146
+   with archival columns      seed=70 AUC=0.7163
+   without archival columns   seed=70 AUC=0.6994
+   with archival columns      seed=77 AUC=0.6599
+   without archival columns   seed=77 AUC=0.6614
+   with archival columns      seed=84 AUC=0.6881
+   without archival columns   seed=84 AUC=0.6988
+   with archival columns      seed=91 AUC=0.7178
+   without archival columns   seed=91 AUC=0.6832
+   with archival columns      seed=98 AUC=0.6452
+   without archival columns   seed=98 AUC=0.6889
+   with archival columns      seed=105 AUC=0.6947
+   without archival columns   seed=105 AUC=0.6954
+
+==============================================================================
+  CALIBRATION TRAP  (193.3 min elapsed)
+==============================================================================
+   seed 42: 0.00->0.546  0.02->0.488  0.05->0.543  0.10->0.444  0.25->0.705  0.50->0.694  0.75->0.706  1.00->0.706
+   seed 49: 0.00->0.463  0.02->0.665  0.05->0.495  0.10->0.630  0.25->0.747  0.50->0.738  0.75->0.754  1.00->0.743
+   seed 56: 0.00->0.581  0.02->0.472  0.05->0.562  0.10->0.530  0.25->0.698  0.50->0.702  0.75->0.704  1.00->0.705
+   seed 63: 0.00->0.546  0.02->0.505  0.05->0.553  0.10->0.579  0.25->0.720  0.50->0.716  0.75->0.730  1.00->0.708
+   seed 70: 0.00->0.426  0.02->0.544  0.05->0.562  0.10->0.546  0.25->0.649  0.50->0.710  0.75->0.725  1.00->0.730
+   seed 77: 0.00->0.533  0.02->0.543  0.05->0.514  0.10->0.550  0.25->0.700  0.50->0.694  0.75->0.685  1.00->0.688
+   seed 84: 0.00->0.420  0.02->0.544  0.05->0.507  0.10->0.529  0.25->0.721  0.50->0.737  0.75->0.708  1.00->0.726
+   seed 91: 0.00->0.492  0.02->0.373  0.05->0.315  0.10->0.436  0.25->0.706  0.50->0.728  0.75->0.725  1.00->0.705
+   seed 98: 0.00->0.452  0.02->0.612  0.05->0.592  0.10->0.561  0.25->0.707  0.50->0.714  0.75->0.700  1.00->0.700
+   seed 105: 0.00->0.681  0.02->0.619  0.05->0.572  0.10->0.595  0.25->0.700  0.50->0.730  0.75->0.718  1.00->0.714
+
+==============================================================================
+  FEATURE FAMILIES  (194.0 min elapsed)
+==============================================================================
+   seed 42 done (32 expedition, 12 weather)
+   seed 49 done (32 expedition, 12 weather)
+   seed 56 done (32 expedition, 12 weather)
+   seed 63 done (31 expedition, 12 weather)
+   seed 70 done (32 expedition, 12 weather)
+   seed 77 done (31 expedition, 12 weather)
+   seed 84 done (32 expedition, 12 weather)
+   seed 91 done (31 expedition, 12 weather)
+   seed 98 done (32 expedition, 12 weather)
+   seed 105 done (32 expedition, 12 weather)
+                       Family  NumFeatures  AUC_mean  AUC_sd  AP_mean  BSS_mean  ECE_mean
+              both (full set)           44    0.7161  0.0160   0.1404    0.0280    0.0045
+              expedition only           32    0.7153  0.0146   0.1387    0.0308    0.0057
+           both, year removed           43    0.7121  0.0123   0.1320    0.0234    0.0036
+expedition only, year removed           31    0.7003  0.0122   0.1300    0.0272    0.0038
+                 weather only           12    0.6096  0.0238   0.0745    0.0038    0.0003
+                       Family  MeanAUC  FullSetMeanAUC   Delta  WinsVsFull  N  Wilcoxon_p
+              expedition only   0.7153          0.7161 -0.0008           5 10     0.94336
+                 weather only   0.6096          0.7161 -0.1065           0 10     0.00195
+           both, year removed   0.7121          0.7161 -0.0040           3 10     0.33594
+expedition only, year removed   0.7003          0.7161 -0.0157           2 10     0.02734
+
+==============================================================================
+  FIGURES  (194.3 min elapsed)
+==============================================================================
+    fig02_selection_distribution
+    fig03_convergence
+    fig04_calibration_metrics
+    fig05_curves
+    fig06_budget
+    fig07_label_shuffle
+    fig08_temporal
+    fig09_leave_one_peak_out
+    fig10_sensitivity
+    fig11_leakage
+    fig12_calibration_trap
+    fig13_archival
+    fig14_feature_stability
+
+==============================================================================
+  WORKBOOK  (194.4 min elapsed)
+==============================================================================
+   workbook: /Users/chinmayakumarpalo/Desktop/himalayan/results_v5/Himalayan_MasterResults.xlsx
+
+==============================================================================
+  COMPLETE in 194.4 min (3.2 h)
+  workbook : /Users/chinmayakumarpalo/Desktop/himalayan/results_v5/Himalayan_MasterResults.xlsx
+  bundle   : /Users/chinmayakumarpalo/Desktop/himalayan/results_v5_bundle.zip (2.7 MB)
+  figures  : 14 png
+==============================================================================
+
+HEADLINE
+     Method  F1_mean  F1_std  NumFeatures_mean  DegenerateRuns
+         GA   0.1755  0.0162              21.4               0
+    FOA_GWO   0.1669  0.0276              26.8               0
+       BHHO   0.1651  0.0281              24.7               0
+        PSO   0.1632  0.0286              20.9               0
+        FOA   0.1607  0.0194              20.4               0
+        RFE   0.1580  0.0289              25.7               0
+   Embedded   0.1577  0.0189              38.5               0
+        GWO   0.1556  0.0227              26.5               0
+       BSSA   0.1545  0.0296              27.9               0
+       BWOA   0.1534  0.0289              23.4               0
+    GWO_FOA   0.1515  0.0242              26.5               0
+ MutualInfo   0.1461  0.0339              25.7               0
+AllFeatures   0.1428  0.0231              43.7               0
+        EVO   0.1258  0.0269              12.4               0
+
+Signal check: real 0.7161 vs shuffled 0.4989
+Calibration: ECE 0.0804 -> 0.0043
+Unseen mountains: mean AUC 0.6727, 1 of 12 below 0.5
+
+VERIFY artifacts/peak_coordinates_VERIFY.csv before using the map panel.

@@ -1,0 +1,23 @@
+Parameter,Value,Comment
+tier,full,compute budget preset
+independent runs (seeds),"[42, 49, 56, 63, 70, 77, 84, 91, 98, 105]",seed sets split and search
+population size P,20,
+iterations T,30,"fixed budget, no early stopping"
+GWO control parameter a,"2 -> 0, linear in t/T",
+GA mutation rate,0.02,
+PSO inertia / c1 / c2,0.7 / 1.5 / 1.5,
+binarisation,"sigmoid transfer, stochastic threshold",
+fitness weights (R/F1/P),0.5/0.3/0.2,
+lambda (size penalty),0.02,
+surrogate,"{'n_estimators': 50, 'max_depth': 6, 'learning_rate': 0.1}",
+inner validation split,0.2,test never touched in search
+correlation screen,0.9,absolute Pearson
+test size,0.3,stratified
+calibration,"sigmoid, cv=3, SHUFFLED inner folds",the repair; see sheet 22
+final threshold,0.11,
+sensitivity budget,"P=10, T=15, seeds=[42, 49, 56]",reduced; not comparable to the main study
+device,cpu,
+python,3.12.0,
+platform,macOS-27.2-arm64-arm-64bit,
+numpy/pandas/sklearn/xgboost,2.5.3/3.0.6/1.9.1/3.4.1,
+finished (UTC),2026-11-01T18:23:37.077685+00:00,

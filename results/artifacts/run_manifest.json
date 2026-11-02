@@ -1,0 +1,211 @@
+{
+  "tier": "full",
+  "seeds": [
+    42,
+    49,
+    56,
+    63,
+    70,
+    77,
+    84,
+    91,
+    98,
+    105
+  ],
+  "device": "cpu",
+  "sources": {
+    "expeditions": "kaggle:siddharth0935/himalayan-expeditions (The Himalayan Database)",
+    "weather": "kaggle:bonesclarke26/historic-weather-data-for-himalayan-peaks v6",
+    "weather_upstream": "Open-Meteo Historical Weather API (https://open-meteo.com)",
+    "weather_licence": "CC BY 4.0",
+    "weather_granularity": "hourly, UTC (GMT+0); collapsed to daily before use",
+    "snowfall_unit": "cm"
+  },
+  "extreme_percentile": 95,
+  "dead_columns_dropped": [
+    "season_Unknown"
+  ],
+  "peak_extreme_thresholds": {
+    "AMAD": {
+      "snow": 2.6600000858306885,
+      "wind": 18.254873275756836,
+      "warm": 2.4192709922790527
+    },
+    "ANN1": {
+      "snow": 3.8499999046325684,
+      "wind": 11.983187675476074,
+      "warm": 2.2067718505859375
+    },
+    "ANN2": {
+      "snow": 5.25,
+      "wind": 10.58791732788086,
+      "warm": 2.0333328247070312
+    },
+    "ANN3": {
+      "snow": 5.739999771118164,
+      "wind": 10.990911483764648,
+      "warm": 2.0822925567626953
+    },
+    "ANN4": {
+      "snow": 4.690000057220459,
+      "wind": 10.952520370483398,
+      "warm": 2.0250020027160645
+    },
+    "ANNS": {
+      "snow": 2.6599998474121094,
+      "wind": 12.245292663574219,
+      "warm": 1.8786466121673584
+    },
+    "BARU": {
+      "snow": 2.940000057220459,
+      "wind": 18.274389266967773,
+      "warm": 2.2213542461395264
+    },
+    "CHOY": {
+      "snow": 5.389999866485596,
+      "wind": 19.666677474975586,
+      "warm": 2.465625762939453
+    },
+    "DHA1": {
+      "snow": 5.039999961853027,
+      "wind": 12.605141639709473,
+      "warm": 2.2020835876464844
+    },
+    "EVER": {
+      "snow": 5.110000133514404,
+      "wind": 19.033740997314453,
+      "warm": 2.383331298828125
+    },
+    "GAUR": {
+      "snow": 2.5899999141693115,
+      "wind": 16.039201736450195,
+      "warm": 2.133333206176758
+    },
+    "HIML": {
+      "snow": 5.599999904632568,
+      "wind": 15.580141067504883,
+      "warm": 2.3442726135253906
+    },
+    "JANU": {
+      "snow": 5.460000038146973,
+      "wind": 17.52131462097168,
+      "warm": 2.0213537216186523
+    },
+    "KANG": {
+      "snow": 5.670000076293945,
+      "wind": 19.245697021484375,
+      "warm": 2.0776047706604004
+    },
+    "KGUR": {
+      "snow": 5.460000038146973,
+      "wind": 14.182354927062988,
+      "warm": 2.1458330154418945
+    },
+    "LANG": {
+      "snow": 4.199999809265137,
+      "wind": 14.186923027038574,
+      "warm": 2.000521183013916
+    },
+    "LHOT": {
+      "snow": 5.110000133514404,
+      "wind": 17.238698959350586,
+      "warm": 2.3854165077209473
+    },
+    "LSHR": {
+      "snow": 5.110000133514404,
+      "wind": 17.238698959350586,
+      "warm": 2.3854165077209473
+    },
+    "LUNR": {
+      "snow": 5.9639997482299805,
+      "wind": 20.124610900878906,
+      "warm": 2.4395828247070312
+    },
+    "MAK2": {
+      "snow": 5.25,
+      "wind": 19.40663719177246,
+      "warm": 2.2614593505859375
+    },
+    "MAKA": {
+      "snow": 5.389999866485596,
+      "wind": 17.280000686645508,
+      "warm": 2.119272232055664
+    },
+    "MANA": {
+      "snow": 7.279999732971191,
+      "wind": 10.594036102294922,
+      "warm": 2.046356201171875
+    },
+    "NUPT": {
+      "snow": 5.320000171661377,
+      "wind": 16.17998695373535,
+      "warm": 2.472916603088379
+    },
+    "PUMO": {
+      "snow": 5.25,
+      "wind": 20.493457794189453,
+      "warm": 2.406770706176758
+    },
+    "PUTH": {
+      "snow": 4.340000152587891,
+      "wind": 16.93531036376953,
+      "warm": 2.2854156494140625
+    },
+    "TILI": {
+      "snow": 3.7799999713897705,
+      "wind": 14.578887939453125,
+      "warm": 2.002603530883789
+    },
+    "TUKU": {
+      "snow": 5.039999961853027,
+      "wind": 12.605141639709473,
+      "warm": 2.006770610809326
+    }
+  },
+  "elapsed_minutes": 194.39,
+  "dataset": {
+    "expeditions_total": 11425,
+    "expeditions_retained": 9457,
+    "weather_peaks": 27,
+    "peaks_in_data": 27,
+    "pct_no_interval": 15.3537,
+    "positives": 504,
+    "positive_rate_pct": 5.3294,
+    "imbalance_ratio": 17.764,
+    "encoded_columns": 70,
+    "columns_after_screen": 44,
+    "train_rows": 6619,
+    "test_rows": 2838,
+    "train_positives": 353,
+    "test_positives": 151,
+    "duplicate_rows": 112
+  },
+  "friedman": {
+    "statistic": 32.0053,
+    "p_value": 0.002398,
+    "methods": [
+      "AllFeatures",
+      "BHHO",
+      "BSSA",
+      "BWOA",
+      "EVO",
+      "Embedded",
+      "FOA",
+      "FOA_GWO",
+      "GA",
+      "GWO",
+      "GWO_FOA",
+      "MutualInfo",
+      "PSO",
+      "RFE"
+    ],
+    "n_seeds": 10
+  },
+  "versions": {
+    "python": "3.12.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1"
+  }
+}

@@ -1,0 +1,5 @@
+Family,MeanAUC,FullSetMeanAUC,Delta,WinsVsFull,N,Wilcoxon_p
+expedition only,0.7153,0.7161,-0.0008,5,10,0.94336
+weather only,0.6096,0.7161,-0.1065,0,10,0.00195
+"both, year removed",0.7121,0.7161,-0.004,3,10,0.33594
+"expedition only, year removed",0.7003,0.7161,-0.0157,2,10,0.02734

@@ -1,0 +1,35 @@
+Sheet,Contents
+00_README,this sheet
+01_Config,every parameter used
+02_Dataset,"record counts, peaks, imbalance, screening"
+03_PeakSummary,"per-mountain expeditions, deaths, rate"
+04_FeatureDictionary,every engineered feature defined
+05_Baselines,untuned classifiers across runs
+06_Selection_PerRun,one row per method and run
+07_Selection_Summary,"mean, sd, 95% CI per method"
+08_Significance,paired Wilcoxon with Holm correction; Friedman
+09_Imbalance_PerRun,resampling treatments
+10_Imbalance_Summary,aggregated
+11_Calibration_PerRun,"ECE, Brier, skill, log loss"
+12_Calibration_Summary,calibrated vs uncalibrated
+13_Final,the evaluated configuration across runs
+14_HonestThreshold,cut-off from validation; test-tuning bias
+15_Budget_PerRun,review-capacity operating points
+16_Budget_Summary,the operational table for the manuscript
+17_LabelShuffle,what pure noise scores
+18_CalibrationMethods,none vs sigmoid vs isotonic
+19_LinearBaseline,calibrated logistic regression
+20_LinearVsPipeline,paired comparison
+21_Temporal,"train on the past, test on the future"
+22_LeaveOnePeakOut,transfer to an unseen mountain
+23_Tuning,does the ranking survive tuning
+24_RepeatedKFold,5-fold x 2 on the final configuration
+25_Archival,without the cataloguing columns
+26_CalibrationTrap,AUC against fraction of rows shuffled
+27_Sensitivity,"fitness weights, lambda, precision floor"
+28_Leakage,termreason ablation
+29_SelectedFeatures,subset chosen per method per run
+30_FeatureStability,how often each feature survives
+31_Citations,reference for every method compared
+32_FeatureFamilies,"weather-only vs expedition-only vs both, per seed"
+33_FeatureFamilies_Sig,paired Wilcoxon of each family against the full set

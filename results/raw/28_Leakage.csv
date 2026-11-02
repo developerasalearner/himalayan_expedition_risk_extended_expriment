@@ -1,0 +1,11 @@
+Configuration,Seed,NumFeatures,TermreasonSelected,ScreenedColumns,Accuracy,Precision,Recall,F1,ROC_AUC,AveragePrecision
+termreason excluded,42,23,False,44,0.9183,0.2086,0.1921,0.2,0.7022,0.1454
+termreason readmitted,42,29,True,45,0.9165,0.3028,0.4371,0.3577,0.7975,0.3867
+termreason excluded,49,31,False,44,0.9341,0.3,0.1788,0.2241,0.7358,0.1546
+termreason readmitted,49,34,True,45,0.9292,0.3656,0.4503,0.4036,0.8528,0.4149
+termreason excluded,56,23,False,44,0.9193,0.1638,0.1258,0.1423,0.667,0.1012
+termreason readmitted,56,27,True,45,0.9204,0.3134,0.4172,0.358,0.818,0.3611
+termreason excluded,63,32,False,43,0.9158,0.1857,0.1722,0.1787,0.695,0.1234
+termreason readmitted,63,28,True,44,0.919,0.3146,0.4437,0.3681,0.8018,0.3997
+termreason excluded,70,30,False,44,0.9232,0.1683,0.1126,0.1349,0.7163,0.1379
+termreason readmitted,70,22,True,45,0.9087,0.2652,0.404,0.3202,0.7995,0.3365

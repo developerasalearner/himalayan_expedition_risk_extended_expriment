@@ -1,0 +1,21 @@
+# Versions recorded by the archived run in results/ (see
+# results/artifacts/run_manifest.json). Pinning these reproduces that run most
+# closely; the package was executed on Python 3.12.0.
+#
+# Packages the run did not record are left unpinned - they affect rendering and
+# I/O, not the numbers. Install the newest compatible versions.
+
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+xgboost==3.4.1
+
+# not version-recorded by the run
+imbalanced-learn
+scipy
+matplotlib
+seaborn
+pyarrow
+openpyxl
+XlsxWriter
+kagglehub

@@ -1,0 +1,27 @@
+Feature,Family,Definition,Unit
+temp_mean,climate,Mean 2 m temperature over the recorded interval,degC
+temp_max,climate,Maximum 2 m temperature,degC
+temp_min,climate,Minimum 2 m temperature,degC
+temp_std,climate,Standard deviation of daily mean temperature,degC
+snow_total,climate,Total snowfall over the interval,cm
+snow_max,climate,Largest single-day snowfall,cm
+snow_extreme_rate,exceedance,Share of days above this peak's 95th-percentile daily snowfall,0-1
+wind_mean,climate,Mean 100 m wind speed,km/h
+wind_max,climate,Maximum daily-maximum 100 m wind speed,km/h
+wind_extreme_rate,exceedance,Share of days above this peak's 95th-percentile daily maximum wind,0-1
+pressure_mean,climate,Mean surface pressure,hPa
+pressure_min,climate,Minimum surface pressure,hPa
+warming_extreme_rate,exceedance,Share of days whose day-over-day warming exceeds this peak's 95th percentile,0-1
+solid_precip_rate,exceedance,Share of days whose WMO code indicates solid precipitation (code >= 70),0-1
+team_size,vulnerability,Total expedition members,count
+exposure_days,vulnerability,Recorded expedition duration,days
+camp_density,vulnerability,Camps established per day,camps/day
+technical_difficulty,vulnerability,Fixed rope laid per day,m/day
+elevation_risk,vulnerability,Highest point reached,m
+oxygen_used,vulnerability,Supplementary oxygen used,0/1
+oxygen_free_ascent,vulnerability,No supplementary oxygen,0/1
+is_standard_route,vulnerability,Standard route attempted,0/1
+is_commercial_route,vulnerability,Commercial expedition,0/1
+season_*,vulnerability,One-hot indicators for climbing season,0/1
+<climate>_missing,missingness,1 when no usable weather interval existed,0/1
+fatality,target,1 when a member death is recorded,0/1

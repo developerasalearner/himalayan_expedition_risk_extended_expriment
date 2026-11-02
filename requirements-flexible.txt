@@ -1,0 +1,16 @@
+# Use this if the pinned versions in requirements.txt will not install on your
+# platform. The conclusions are stable across versions; third decimals are not.
+# Run scripts/verify_results.py afterwards to confirm nothing flipped.
+
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+xgboost>=2.0
+imbalanced-learn>=0.12
+scipy>=1.11
+matplotlib>=3.8
+seaborn>=0.13
+pyarrow>=14
+openpyxl>=3.1
+XlsxWriter>=3.1
+kagglehub>=0.3

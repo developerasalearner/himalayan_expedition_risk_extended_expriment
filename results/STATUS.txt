@@ -1,0 +1,5 @@
+COMPLETE
+tier=full
+elapsed 194.4 min
+workbook /Users/chinmayakumarpalo/Desktop/himalayan/results_v5/Himalayan_MasterResults.xlsx
+bundle /Users/chinmayakumarpalo/Desktop/himalayan/results_v5_bundle.zip

@@ -1,0 +1,16 @@
+Item,Value
+expeditions_total,11425.0
+expeditions_retained,9457.0
+weather_peaks,27.0
+peaks_in_data,27.0
+pct_no_interval,15.3537
+positives,504.0
+positive_rate_pct,5.3294
+imbalance_ratio,17.764
+encoded_columns,70.0
+columns_after_screen,44.0
+train_rows,6619.0
+test_rows,2838.0
+train_positives,353.0
+test_positives,151.0
+duplicate_rows,112.0

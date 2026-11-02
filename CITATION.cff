@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper below."
+title: "Fatality risk screening for Himalayan expeditions: reproduction package"
+authors:
+  - family-names: "Palo"
+    given-names: "Chinmaya Kumar"
+    affiliation: "Veer Surendra Sai University of Technology, Burla, Odisha, India"
+    email: "chinmayakumarpalo.official@gmail.com"
+  - family-names: "Behera"
+    given-names: "Himansu Sekhar"
+    affiliation: "Veer Surendra Sai University of Technology, Burla, Odisha, India"
+license: MIT
+repository-code: "https://github.com/developerasalearner/himalayan-expedition-risk"
+keywords:
+  - probability calibration
+  - rare-event classification
+  - environmental exposure assessment
+  - data leakage
+  - reproducibility
+  - mountain hazards
+# Fill in once the paper is accepted:
+# preferred-citation:
+#   type: article
+#   title: "A silent failure in cross-validated probability calibration for grouped environmental data, with an application to fatality risk in Himalayan expeditions"
+#   journal: ""
+#   year:
+#   doi: ""

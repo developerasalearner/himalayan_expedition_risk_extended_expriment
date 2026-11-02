@@ -1,0 +1,4 @@
+Metric,Logistic_mean,Pipeline_mean,Difference,LogisticWins,n,Wilcoxon_p
+ROC_AUC,0.7485,0.6922,0.0563,10,10,0.00195
+AveragePrecision,0.1762,0.1254,0.0508,10,10,0.00195
+F1,0.2504,0.1622,0.0882,10,10,0.00195

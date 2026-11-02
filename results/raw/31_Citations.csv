@@ -1,0 +1,15 @@
+Method,Reference
+GA,"Holland, Adaptation in Natural and Artificial Systems, 1975"
+PSO,"Kennedy & Eberhart, ICNN 1995"
+GWO,"Mirjalili, Mirjalili & Lewis, Adv Eng Softw 69:46-61, 2014"
+EVO,Evolutionary centroid variant (this work; retained as a failure case)
+FOA,"Ghaemi & Feizi-Derakhshi, Expert Syst Appl 41(15):6676-6687, 2014"
+FOA_GWO,Proposed sequential hybrid (this work)
+GWO_FOA,Reversed-order control (this work)
+BWOA,"Mirjalili & Lewis, Adv Eng Softw 95:51-67, 2016"
+BHHO,"Heidari et al., Future Gener Comput Syst 97:849-872, 2019"
+BSSA,"Mirjalili et al., Adv Eng Softw 114:163-191, 2017"
+Embedded,L1 pre-filter with greedy backward elimination (this work)
+MutualInfo,Mutual-information filter baseline
+RFE,"Guyon et al., Mach Learn 46:389-422, 2002"
+AllFeatures,No selection (control)
